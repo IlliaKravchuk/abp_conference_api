@@ -20,40 +20,34 @@ RESTful API сервіс для управління конференц-зала
 
 2. **Запустіть базу даних через Docker Compose:**
 
-``` bash
+bash
 
-
-``` docker compose up -d
+docker compose up -d
 
 3. **Створіть та активуйте віртуальне середовище:**
 
-``` bash
+bash
 
+python3 -m venv venv
 
-``` python3 -m venv venv
-
-
-``` source venv/bin/activate
+source venv/bin/activate
 
 4. **Встановіть залежності:**
 
-``` bash
+bash
 
-
-+ pip install -r requirements.txt
+pip install -r requirements.txt
 
 5. **Заповніть базу початковими даними (зали та послуги):**
 
-``` bash
+bash
 
-
-``` python seed.py
+python seed.py
 
 6. **Запустіть сервер:**
 
-``` bash
+bash
 
-
-``` git add README.mduvicorn app.main:app --reload
+git add README.mduvicorn app.main:app --reload
 
 Доступ до інтерактивної документації Swagger UI: **http://127.0.0.1:8000/docs**
